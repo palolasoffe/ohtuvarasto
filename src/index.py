@@ -60,12 +60,12 @@ def testaa_suuret_poistot(mehua, olutta):
     print(f"Mehuvarasto: {mehua}")
 
 def main():
-    mehua, olutta = luo_ja_tulosta_varasto
+    mehua, olutta = luo_ja_tulosta_varasto()
     nayta_getterit(olutta)
     muokkaa_mehuvarastoa(mehua)
     virhetilanteet()
     testaa_suuret(mehua, olutta)
     testaa_suuret_poistot(mehua, olutta)
-    
+
 if __name__ == "__main__":
     main()
